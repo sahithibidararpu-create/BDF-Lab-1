@@ -1,25 +1,41 @@
-# BDF Lab 1
+# Lab 1: Node.js and Express Server
 
-Node.js and Express server (Backend Development Fundamentals).
+   **Live URL:** https://sahithi-bidarapu.onrender.com
 
-## Setup
+- **Name:** Sahithi Bidarapu
+- **Registration No:** 252U1R1034
+- **Section:** CSE Core 1A
+- **Course:** Backend Development Fundamentals
+
+## Installation
 
 npm install
 
 ## Run
 
-node server.js
+npm start
 
 Open http://localhost:3000
 
-## Routes
+## API Endpoints
 
-- GET / : welcome text
-- GET /about : JSON with name and section
-- GET /time : current date and time
-- Any other path : 404 message
+| Method | Route | Response | Status |
+| --- | --- | --- | --- |
+| GET | / | Welcome text | 200 |
+| GET | /about | JSON with name and section | 200 |
+| GET | /time | Current date and time | 200 |
+| GET | any other path | 404 - Page Not Found | 404 |
 
-## Files
+## Screenshots
 
-- server.js: Express server
-- plain-server.js: plain Node.js http server
+![Home](screenshots/home.png)
+![About](screenshots/about.png)
+![Time](screenshots/time.png)
+![404](screenshots/abc.png)
+![Terminal status codes](screenshots/terminal.png)
+
+## Notes
+
+- server.js uses Express; plain-server.js uses the built-in http module.
+- Each request's method, URL and status code is logged in the terminal.
+- .env and node_modules are excluded using .gitignore.
