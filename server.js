@@ -2,7 +2,7 @@
 const express = require("express");
 
 const app = express();
-const PORT = 3000;
+
 
 // Log each request and its response status
 app.use((req, res, next) => {
@@ -38,6 +38,7 @@ app.use((req, res) => {
 });
 
 // Start Express server
-app.listen(PORT, () => {
-    console.log(`Express server running at http://localhost:${PORT}`);
-});
+   const PORT = process.env.PORT || 3000;
+   app.listen(PORT, () => {
+     console.log(`Server running on port ${PORT}`);
+   });
