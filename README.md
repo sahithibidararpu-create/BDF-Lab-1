@@ -4,7 +4,7 @@
 
 - **Name:** Sahithi Bidarapu
 - **Registration No:** 252U1R1034
-- **Section:** CSE Core 1A
+- **Section:** CSE Core 2A
 - **Course:** Backend Development Fundamentals
 
 ## Installation
